@@ -8,3 +8,5 @@ plugins:
   - jekyll-sitemap
 
 theme: jekyll-theme-primer
+
+gem install jekyll-seo-tag jekyll-sitemap
