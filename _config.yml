@@ -1,12 +1,2 @@
-title: Jekyll SEO Tag
-description: A Jekyll plugin to add metadata tags for search engines and social networks to better index and display your site's content.
-
-permalink: pretty
-
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-theme: jekyll-theme-primer
-
-gem install jekyll-seo-tag jekyll-sitemap
+name: Nicholas Rapidis
+markdown: kramdown
