@@ -1,2 +1,2 @@
-name: Nicholas Rapidis
-markdown: kramdown
+plugins:
+  - jekyll-seo-tag
