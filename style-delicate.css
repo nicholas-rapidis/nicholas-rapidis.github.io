@@ -1,0 +1,154 @@
+/* =====================================================================
+   EXPERIMENT: a more delicate, artistic look.
+   Loaded AFTER style.css and only overrides typography and fine details.
+   To try it on the real page, add this line after the style.css link:
+     <link rel="stylesheet" href="style-delicate.css">
+   To go back, just remove that line.
+   ===================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap");
+
+:root {
+  --display: "Cormorant Garamond", "EB Garamond", Georgia, serif;
+  --rule: #ECEEF0;            /* lighter hairlines */
+  --text: #26292D;
+}
+
+/* Body text in a book serif, slightly larger and airier */
+body {
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+main { padding-top: 8rem; }
+
+/* ---------- Name & header ---------- */
+h1 {
+  font-family: var(--display);
+  font-weight: 300;
+  font-size: 3.1rem;
+  letter-spacing: 0.01em;
+  margin-bottom: 0.5rem;
+}
+.tagline {
+  font-family: var(--sans);
+  font-weight: 300;
+  font-size: 0.7rem;
+  letter-spacing: 0.24em;
+}
+
+.contact {
+  font-family: var(--sans);
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+.links {
+  font-family: var(--sans);
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+/* CV: a single fine line instead of the thick left bar */
+.cv {
+  border-width: 1px;
+  border-left-width: 1px;
+  padding: 0.6rem 0.9rem 0.65rem;
+}
+.cv-title {
+  font-family: var(--display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.35rem;
+}
+.cv-meta { font-size: 0.7rem; }
+.cv-arrow { font-size: 1.1rem; }
+.cv-meta {
+  font-family: var(--sans);
+  font-weight: 300;
+  letter-spacing: 0.04em;
+}
+.cv-arrow { font-weight: 300; }
+
+/* ---------- Section headings: display serif + trailing hairline ---------- */
+section { margin-bottom: 4rem; }
+
+h2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--display);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.1rem;
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 1.4rem;
+}
+h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--rule);
+  transform: translateY(0.15em);
+}
+
+/* ---------- Projects ---------- */
+.project-name,
+.pm-title {
+  font-family: var(--display);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  font-variant-numeric: lining-nums;   /* keep "50L" / "m3" from looking like "5oL" / "m₃" */
+}
+.project-name { font-size: 1.15rem; }
+.pm-title     { font-size: 1.75rem; line-height: 1.2; }
+.year {
+  font-family: var(--sans);
+  font-weight: 300;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+}
+.project-links {
+  font-family: var(--sans);
+  font-weight: 300;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+
+/* ---------- Dropdowns & lists ---------- */
+.fav summary {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1.4rem;
+}
+.group-name,
+.section-label {
+  font-weight: 300;
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+}
+.favorites cite { font-size: 1.12rem; }
+.rec,
+.treat,
+.peek {
+  font-family: var(--sans);
+  font-weight: 300;
+  letter-spacing: 0.01em;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 0.95rem;
+  text-align: center;
+  border-top: none;
+}
+
+@media (max-width: 600px) {
+  main { padding-top: 5.5rem; }   /* phones keep the original top space */
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 1.8rem; }
+}
