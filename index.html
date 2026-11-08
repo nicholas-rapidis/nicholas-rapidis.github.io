@@ -5,15 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nicholas Rapidis</title>
   <meta name="description" content="Nicholas Rapidis, experimental physicist at Yale working on dark matter, quantum sensing, and precision measurement.">
-  <!-- Google Search Console ownership check (carried over from the old site; keep it) -->
+  <!-- Google Search Console verification: keep -->
   <meta name="google-site-verification" content="3yHhdon0LsXbiPeQ8P6Exye0nwHwGXAKNLegcLXt0xY">
 
-  <!-- Browser-tab and home-screen icons -->
   <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="images/icons/favicon-192.png">
   <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png">
 
-  <!-- Link preview (LinkedIn, Slack, iMessage, X, etc.). Image URLs must be absolute. -->
+  <!-- Link preview card (LinkedIn, Slack, etc.): URLs must be absolute -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://nicholas-rapidis.github.io/">
   <meta property="og:title" content="Nicholas Rapidis">
@@ -33,10 +32,8 @@
 <body>
   <main>
 
-    <!-- ============ INTRO: photo beside name + bio ============ -->
+    <!-- ============ INTRO ============ -->
     <header class="intro">
-      <!-- Desktop: photo on the left, name + bio on the right.
-           Mobile: name on top, photo centered, then bio (see style.css). -->
       <div class="name-block">
         <h1>Nicholas Rapidis</h1>
         <p class="tagline">Department of Physics<span class="tag-sep"> &middot; </span><span class="tag-uni">Yale University</span></p>
@@ -77,7 +74,7 @@
           I received my PhD from Stanford University in 2026, where I worked in Kent Irwin's group on low-mass axion dark matter searches as part of DMRadio. During my time there, I introduced <a href="https://inspirehep.net/literature/3147028" target="_blank" rel="noopener" data-goatcounter-click="paper-core-bio">DMRadio-Core</a>, a new detector geometry design which allows for a significant decrease in magnet size of experiments while maintaining comparable sensitivity to the axion. I was also part of the commissioning of <a href="https://inspirehep.net/literature/3178165" target="_blank" rel="noopener" data-goatcounter-click="paper-50L-bio">DMRadio-50L</a> and carried out the full sensitivity calculations and design of <a href="https://inspirehep.net/literature/2637230" target="_blank" rel="noopener" data-goatcounter-click="paper-m3-bio">DMRadio-m<sup>3</sup></a>. My <a href="https://purl.stanford.edu/nk519yg5404" target="_blank" rel="noopener" data-goatcounter-click="thesis">thesis</a> will be published in spring 2027 by Springer Nature as part of the Springer Theses series.
         </p>
         <p>
-          I received my BA in Physics from UC Berkeley in 2019, where I was a member of Karl van Bibber's research group. I worked on the HAYSTAC experiment, characterizing and optimizing the microwave cavity used in its Phase II operation.
+          Prior to Stanford, I was an undergraduate at UC Berkeley, where I received my BA in Physics in 2019 and was a member of Karl van Bibber's research group. I worked on the HAYSTAC experiment, characterizing and optimizing the microwave cavity used in its Phase II operation.
         </p>
         <p>
           I am a member of the DMRadio, ALPHA, and HAYSTAC collaborations.
@@ -89,9 +86,7 @@
     <section>
       <h2>Projects</h2>
 
-      <!-- Each project is a card (square thumbnail + name). Clicking it opens a pop-up
-           with the larger picture (data-full) and everything inside .project-detail.
-           To add a project, copy one <article> and change the image, name, year and text. -->
+      <!-- To add a project, copy an <article>. data-full = larger pop-up image; .project-detail = pop-up text. -->
       <div class="projects">
         <article class="project" data-full="images/projects/JPC.png">
           <button class="project-card" type="button">
@@ -174,13 +169,9 @@
       <p>
         Below are some favorite works of music and literature, along with a few photos I've taken.
       </p>
-      <!-- Favorites: two small dropdowns, closed by default -->
       <div class="favorites-group">
         <details class="fav">
           <summary>Some of my favorite musical works and recordings</summary>
-          <!-- Grouped by composer. Each work: title, then favorite recording linked to YouTube.
-               To add a work by an existing composer, add another <li> inside that composer's <ul>.
-               Links that are still YouTube searches (results?search_query=...) are placeholders. -->
           <div class="favorites recordings">
             <div class="group">
               <p class="group-name">R. Wagner</p>
@@ -188,7 +179,6 @@
                 <li><cite>Parsifal</cite>
                   <a class="rec" href="https://www.youtube.com/watch?v=M1XFsJ4yJCk" target="_blank" rel="noopener">Philippe Jordan &middot; Wiener Staatsoper (2023)</a>
                   <a class="treat" href="https://www.youtube.com/watch?v=DQ5EeiOtRX0" target="_blank" rel="noopener">[An excellent musical overview of Parsifal]</a>
-                  <!-- hover (or tap) to show a small photo; not a link -->
                   <span class="peek" tabindex="0">[Me at my first Bayreuth (2021)]<img class="peek-img" src="images/music/bayreuth.jpg" alt="Me in the Bayreuth Festspielhaus, 2021"></span></li>
                 <li><cite>Die Walküre</cite>
                   <a class="rec" href="https://www.youtube.com/watch?v=dRsMb06NX5A" target="_blank" rel="noopener">Christian Thielemann &middot; Bayreuth (2013)</a></li>
@@ -248,7 +238,6 @@
               </ul>
             </div>
 
-            <!-- Rarely heard: same composer-group format as above -->
             <p class="section-label">Rarely heard</p>
             <div class="group">
               <p class="group-name">R. Langgaard</p>
@@ -278,7 +267,6 @@
 
         <details class="fav">
           <summary>Some of my favorite books</summary>
-          <!-- Grouped by author. To add a book by an existing author, add another <li> in their <ul>. -->
           <div class="favorites books">
             <div class="group">
               <p class="group-name">Thomas Mann</p>
@@ -335,8 +323,7 @@
 
         <details class="fav">
           <summary>Some photos I've taken</summary>
-          <!-- Thumbnails open a larger view on click. To add one: put the full image and a
-               small "-thumb" copy in images/photos/, then copy a <button> below. -->
+          <!-- To add a photo: put the image and a "-thumb" copy in images/photos/, then copy a <button>. -->
           <div class="photos">
             <button class="photo" type="button" data-full="images/photos/sf.jpg" data-caption="San Francisco">
               <img src="images/photos/sf-thumb.jpg" alt="San Francisco" loading="lazy">
@@ -365,7 +352,6 @@
 
   </main>
 
-  <!-- Pop-up for the photo thumbnails -->
   <dialog id="lightbox" aria-label="Photo">
     <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
     <img id="lightbox-img" src="" alt="">
@@ -373,7 +359,6 @@
   </dialog>
 
   <script>
-    // Click a thumbnail to open it; click outside, press Esc, or × to close; ← / → to browse.
     (function () {
       var box = document.getElementById("lightbox");
       var img = document.getElementById("lightbox-img");
@@ -394,7 +379,7 @@
       });
 
       box.addEventListener("click", function (e) {
-        if (e.target !== img) box.close();   // backdrop, caption or × closes it
+        if (e.target !== img) box.close();
       });
       document.addEventListener("keydown", function (e) {
         if (!box.open) return;
@@ -404,7 +389,6 @@
     })();
   </script>
 
-  <!-- Pop-up page for each project -->
   <dialog id="project-modal" aria-labelledby="pm-title">
     <div class="pm-inner" tabindex="-1" autofocus>
       <button class="pm-close" type="button" aria-label="Close">&times;</button>
@@ -415,9 +399,7 @@
   </dialog>
 
   <script>
-    // Click a project card to open its pop-up; click outside, press Esc, or × to close;
-    // ← / → to move between projects. The project's own text is moved into the pop-up
-    // while it's open (and back afterwards), so its links keep their click tracking.
+    // The project's text is moved into the pop-up (not copied) so its links keep click tracking.
     (function () {
       var modal = document.getElementById("project-modal");
       var img   = modal.querySelector(".pm-img");
@@ -426,7 +408,7 @@
       var body  = modal.querySelector(".pm-body");
       var projects = Array.prototype.slice.call(document.querySelectorAll(".project"));
       var current = -1;
-      var shown = null;   // { detail, owner } currently borrowed by the pop-up
+      var shown = null;
 
       function putBack() {
         if (!shown) return;
@@ -441,7 +423,7 @@
         var p = projects[current];
         var thumb = p.querySelector("img.thumb");
         var src = p.dataset.full || (thumb && thumb.src);
-        img.hidden = !src;                 // no picture yet → no image in the pop-up
+        img.hidden = !src;
         if (src) { img.src = src; img.alt = thumb ? thumb.alt : ""; }
         name.innerHTML = p.querySelector(".project-name").innerHTML;
         var y = p.querySelector(".year");
@@ -468,7 +450,6 @@
       function closeModal() { putBack(); modal.close(); }
 
       modal.addEventListener("click", function (e) {
-        // only the dark backdrop (the dialog itself) or the × closes it
         if (e.target === modal || e.target.closest(".pm-close")) closeModal();
       });
       modal.addEventListener("cancel", function (e) {   // Esc
@@ -476,7 +457,7 @@
         closeModal();
       });
       modal.addEventListener("close", function () {
-        if (!modal.open) putBack();   // safety net; does nothing if already put back
+        if (!modal.open) putBack();
       });
       document.addEventListener("keydown", function (e) {
         if (!modal.open) return;
@@ -487,9 +468,7 @@
   </script>
 
 
-  <!-- GoatCounter analytics (cookie-free). Dashboard: https://nrapidis.goatcounter.com
-       Links with data-goatcounter-click="..." are counted as clicks (CV, papers).
-       Visits from localhost are ignored automatically. -->
+  <!-- GoatCounter analytics: https://nrapidis.goatcounter.com (data-goatcounter-click links are counted) -->
   <script data-goatcounter="https://nrapidis.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
