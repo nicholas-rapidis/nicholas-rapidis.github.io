@@ -103,6 +103,20 @@ h2::after {
   font-variant-numeric: lining-nums;   /* keep "50L" / "m3" from looking like "5oL" / "m₃" */
 }
 .project-name { font-size: 1.15rem; }
+/* subheading inside a project pop-up */
+.pm-sub {
+  clear: both;              /* start below a side image, not beside it */
+  font-family: var(--sans);  /* small terracotta capitals */
+  font-weight: 500;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--warm);
+  line-height: 1.4;
+  margin: 2rem 0 0.6rem;
+}
+.pm-sub ~ p { padding-left: 1.25rem; }   /* text under a subheading is indented slightly */
+.pm-sub:first-child { margin-top: 0.25rem; }   /* no extra gap right under the title */
 .pm-title     { font-size: 1.75rem; line-height: 1.2; }
 .year {
   font-family: var(--sans);

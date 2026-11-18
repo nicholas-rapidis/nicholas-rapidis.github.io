@@ -355,13 +355,20 @@ h3 {
 .pm-img {
   display: block;
   max-width: 100%;
-  max-height: 52vh;
+  max-height: 200px;
   margin: 0 auto 1.5rem;
 }
 .pm-img[hidden] { display: none; }
+/* square or tall images: a figure on the right, text wraps beside it */
+.pm-inner { display: flow-root; }
+.pm-side .pm-img {
+  float: right;
+  width: 190px;
+  max-height: none;
+  margin: 0.4rem 0 1rem 2rem;
+}
 .pm-title { margin: 0 0 0.75rem; }
 .pm-body p { margin-bottom: 0.75rem; }
-.pm-body .wip { font-style: italic; color: var(--muted); }
 .pm-body .project-links { margin: 1rem 0 0; }
 
 /* ---------- Favorites dropdowns (inside Personal) ---------- */
@@ -642,6 +649,12 @@ footer {
 
   .projects { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 1rem; }
   .pm-inner { padding: 2.25rem 1.25rem 1.25rem; }
+  .pm-side .pm-img {          /* phones: too narrow to wrap text, so stack it */
+    float: none;
+    width: auto;
+    max-height: 200px;
+    margin: 0 auto 1.5rem;
+  }
 
   .group ul { grid-template-columns: 1fr; }
   .books { grid-template-columns: repeat(2, minmax(0, 1fr)); }
